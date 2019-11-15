@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Poppins|Poiret+One|Monoton&display=swap');
+
+body{
+    margin: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden !important;
+}
+
+h4{
+    font-family: 'Poiret One', 'Times New Roman', Times, serif;
+    font-size: 3em;
+}
+
+h4 > span{
+    border-bottom: 1px solid red;
+}
+
+.brand-logo{
+    font-family: 'Monoton',cursive;
+}
+
+.nav-wrapper .link li a:hover{
+    background-color: brown;
+}
+
+.profile img{
+    margin-top: 2rem;
+    width: 30vw;
+    height: 55vh;
+    border: 3px solid white;
+}
+
+.title{
+    margin-top: 2rem;
+    font-family: 'Lobster',cursive;
+    background-color: rgba(4, 4, 22, 0.952);
+    color: white;
+}
+
+.title h2{
+    padding: 10px;
+    font-size: 2.5em;
+}
+
+.address p > span {
+    font-weight: bold;
+}
+
+#skill{
+    margin-top: 2rem;
+}
+
+.content{
+    background-color: white;
+}
+
+#skill .content h5{
+    border-bottom: 1px solid thistle;
+    padding-bottom: 5px;
+}
+
+#skill .content span{
+    font-weight: bold;
+}
+
+#skill .content ul li{
+    margin-left: 2rem;
+}
+
+#biography{
+    margin-top: 2rem;
+}
+
+#biography .content h5{
+    font-family: 'Lobster',cursive;
+    text-align: center;
+}
+
+#biography .content p{
+    font-family: 'Poppins', cursive;
+    color: grey;
+}
+
+#biography .content span{
+    color: rgba(5, 4, 4, 0.89);
+    font-weight: bold;
+}
+
+#hobbies{
+    margin-top: 2rem;
+}
+
+#hobbies .content{
+    padding: 1rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.945);
+    color: white;
+}
+
+footer ul{
+    flex: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul li{
+    margin-right: 1em;
+}
+
+iframe{
+    height: 70vh;
+}
+
+/* ================== 
+            responsive profile 
+                    ================ */
+
+@media all and (min-width:1250px){
+    .brand-logo{
+        margin-left: 10px;
+    }
+}
+
+@media all and (min-width:1024px) and (max-width:1200px){
+    .profile img{
+        width: 40vw;
+        height: 30vh;
+    }
+
+    iframe{
+        height: 30vh;
+    }
+}
+
+@media all and (min-width:600px) and (max-width:999px){
+    .profile img{
+        width: 60vw;
+        height: 40vh;
+    }
+
+    iframe{
+        height: 30vh;
+    }
+}
+
+@media all and (max-width:450px){
+    .profile img{
+        width: 60vw;
+        height: 40vh;
+    }
+
+    iframe{
+        height: 30vh;
+    }
+}
